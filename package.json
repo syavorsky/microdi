@@ -1,0 +1,30 @@
+{
+  "name": "microdi",
+  "version": "1.0.0",
+  "description": "Micro helper for JavaScript DI",
+  "main": "index.es6.js",
+  "repository": "git@github.com:yavorskiy/microdi.git",
+  "author": "Sergii Iavorskyi <yavorskiy.s@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.23.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "ava test.js"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "babel": {
+    "presets": [
+      "es2015", "stage-0"
+    ]
+  }
+}
